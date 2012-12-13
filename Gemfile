@@ -24,7 +24,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'terminal-notifier-guard'
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
 end
 
 gem 'jquery-rails'
