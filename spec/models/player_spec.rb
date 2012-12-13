@@ -3,7 +3,9 @@ require 'spec_helper'
 describe Player do
   let(:akiva){create(:player_with_team)}
   let(:team) {create(:team)}  
-  
+  context "relationships" do
+    it {should belong_to(:team)}
+  end
   context "adding to team stats" do
 
     context "#science" do

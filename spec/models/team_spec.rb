@@ -15,11 +15,7 @@ describe Team do
       end
     end
   end
-  context "information" do
-    it "should have a name" do
-      team = create(:team)
-      expect(team.name).to eq("Flatiron School")
-    end
+  context "relationships" do
     it { should have_many(:players)}
   end
 
