@@ -1,9 +1,6 @@
 FactoryGirl.define do
   factory :team do
     name "Flatiron School"
-    military 100
-    science 100
-    culture 100
   end
 
   factory :teams_with_players do

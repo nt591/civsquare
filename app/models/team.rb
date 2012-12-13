@@ -1,13 +1,12 @@
 class Team < ActiveRecord::Base
   attr_accessible :name, :military
   has_many :players
+  before_save :set_defaults
 
-  def initializer(name, military=0, science=0, culture=0)
-    @name = name
-    @military = military
-    @science = science
-    @culture = culture
+  private
+  def set_defaults
+    self.science ||= 100
+    self.military ||= 100
+    self.culture ||= 100
   end
-
-  
 end

@@ -40,6 +40,10 @@ describe TeamsController do
       get :index, {}, valid_session
       assigns(:teams).should eq([team])
     end
+    it "renders the teams/index" do
+      get :index
+      response.should render_template("index")
+    end
   end
 
   describe "GET show" do
