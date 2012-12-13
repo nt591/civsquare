@@ -16,5 +16,16 @@ describe Team do
       team = create(:team)
       expect(team.military).to eq(100)
     end
+
+    it "should have culture" do
+      team = create(:team)
+      expect(team.culture).to eq(100)
+    end
+  
+    it "should have science" do
+      team = create(:team)
+      expect(team.science).to eq(100)
+    end
+
   end
 end
