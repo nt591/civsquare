@@ -26,6 +26,8 @@ group :development, :test do
   gem 'terminal-notifier-guard'
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
+  gem 'json'
+  gem 'debugger'
 end
 
 gem 'jquery-rails'
