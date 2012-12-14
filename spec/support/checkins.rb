@@ -1,2 +1,2 @@
 
-parsed_json = ActiveSupport::JSON.decode(File.expand_path(File.dirname(__FILE__)+ '/push_checkin.json'))
+parsed_json = YAML.load('spec/support/push_checkin.json')
